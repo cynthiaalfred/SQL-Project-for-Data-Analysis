@@ -38,3 +38,11 @@ SUM(CASE WHEN Rating_Count IS NULL THEN 1 ELSE 0 END) AS null_rating_count
 FROM swiggy_data;
 ```
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result.png)
+
+## Blank or Empty Strings
+```SQL
+SELECT*
+FROM swiggy_data
+WHERE
+State = ' ' OR City = '' OR Restaurant_Name = '' OR Location='' OR Category='' OR Dish_Name=''
+```
