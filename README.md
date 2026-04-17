@@ -14,3 +14,5 @@ As there are two errors -  the combo for the string cannot be converted to type 
 -(as the values in column Dish Name is very large and multiple characters used - its a large stored value)
 - Changed the Dish_Name to varchar(200)
 - Similarly I've renamed other data type nvarchar(50) to varchar (150)
+
+> operation complete and result is success > close the tab as the data is now uploaded.
