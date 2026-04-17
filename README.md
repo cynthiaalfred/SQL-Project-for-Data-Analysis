@@ -37,3 +37,4 @@ SUM(CASE WHEN Rating IS NULL THEN 1 ELSE 0 END) AS null_rating,
 SUM(CASE WHEN Rating_Count IS NULL THEN 1 ELSE 0 END) AS null_rating_count
 FROM swiggy_data;
 ```
+![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result.png)
