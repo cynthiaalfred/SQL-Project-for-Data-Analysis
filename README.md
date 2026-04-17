@@ -57,3 +57,15 @@ State, City, Order_Date, Restaurant_Name, Location, Category, Dish_Name, Price_I
 ```
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%202.png)
+
+### Delete Duplication
+```SQL
+WITH CTE AS (
+SELECT *, ROW_NUMBER() Over(
+    PARTITION BY State, City, Order_Date, Restaurant_Name, Location, Category, Dish_Name, Price_INR, Rating, Rating_Count
+	ORDER BY (SELECT NULL)
+	) AS rn
+FROM swiggy_data
+)
+DELETE FROM CTE WHERE rn>1
+```
