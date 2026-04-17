@@ -37,6 +37,7 @@ SUM(CASE WHEN Rating IS NULL THEN 1 ELSE 0 END) AS null_rating,
 SUM(CASE WHEN Rating_Count IS NULL THEN 1 ELSE 0 END) AS null_rating_count
 FROM swiggy_data;
 ```
+
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result.png)
 
@@ -45,7 +46,7 @@ FROM swiggy_data;
 SELECT*
 FROM swiggy_data
 WHERE
-State = ' ' OR City = '' OR Restaurant_Name = '' OR Location='' OR Category='' OR Dish_Name=''
+State = ' ' OR City = '' OR Restaurant_Name = '' OR Location='' OR Category='' OR Dish_Name=''     # '' is space
 ```
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%201.png)
