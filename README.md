@@ -13,4 +13,7 @@ To import data
 (as the values in column Dish Name is very large and multiple characters used - its a large stored value)
 - So, I changed the Dish_Name to varchar(200) & renamed other data type nvarchar(50) to varchar (150)
 -Once the Operation  was complete and result is success I've close the tab as the data is now uploaded.
-- Right click on Swiggy_Data > Refresh > open tables 
+- Right click on Swiggy_Data > Refresh > open tables > swiggy_data file is imported.
+
+## To query
+- select Swiggy Database > right click > new query
