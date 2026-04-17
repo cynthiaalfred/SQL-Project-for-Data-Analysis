@@ -47,12 +47,12 @@ FROM swiggy_data
 WHERE
 State = ' ' OR City = '' OR Restaurant_Name = '' OR Location='' OR Category='' OR Dish_Name=''
 ```
-## Result
+### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%201.png)
 
 ### - Duplicate Detection
 ```SQL
 State, City, Order_Date, Restaurant_Name, Location, Category, Dish_Name, Price_INR, Rating, Rating_Count
 ```
-## Result
+### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%202.png)
