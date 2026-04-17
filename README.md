@@ -54,5 +54,5 @@ State = ' ' OR City = '' OR Restaurant_Name = '' OR Location='' OR Category='' O
 ```SQL
 State, City, Order_Date, Restaurant_Name, Location, Category, Dish_Name, Price_INR, Rating, Rating_Count
 ```
-## Resilt
+## Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%202.png)
