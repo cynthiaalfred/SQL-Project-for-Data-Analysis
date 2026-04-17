@@ -15,5 +15,9 @@ To import data
 -Once the Operation  was complete and result is success I've close the tab as the data is now uploaded.
 - Right click on Swiggy_Data > Refresh > open tables > swiggy_data file is imported.
 
-## To query
+## Write Query
 - select Swiggy Database > right click > new query
+
+```SQL
+SELECT * FROM swiggy_data       # * everything from database
+```
