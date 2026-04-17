@@ -69,3 +69,5 @@ FROM swiggy_data
 )
 DELETE FROM CTE WHERE rn>1
 ```
+### Result
+![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%203.png)
