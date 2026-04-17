@@ -21,3 +21,19 @@ To import data
 ```SQL
 SELECT * FROM swiggy_data       # * everything from database
 ```
+## Data Cleaning & Validation
+### - Null Check
+```SQL
+SELECT
+SUM(CASE WHEN State IS NULL THEN 1 ELSE 0 END) AS null_state,
+SUM(CASE WHEN City IS NULL THEN 1 ELSE 0 END) AS null_city,
+SUM(CASE WHEN Order_Date IS NULL THEN 1 Else 0 END) AS null_Order_date,
+SUM(CASE WHEN Restaurant_Name IS NULL THEN 1 ELSE 0 END) AS null_restaurant,
+SUM(CASE WHEN Location IS NULL THEN 1 ELSE 0 END) AS null_location, 
+SUM(CASE WHEN Category IS NULL THEN 1 ELSE 0 END) AS null_category,
+SUM(CASE WHEN Dish_Name IS NULL THEN 1 ELSE 0 END) AS dish,
+SUM(CASE WHEN Price_INR IS NULL THEN 1 ELSE 0 END) AS null_price,
+SUM(CASE WHEN Rating IS NULL THEN 1 ELSE 0 END) AS null_rating,
+SUM(CASE WHEN Rating_Count IS NULL THEN 1 ELSE 0 END) AS null_rating_count
+FROM swiggy_data;
+```
