@@ -88,5 +88,3 @@ CREATE TABLE dim_date(
    Week INT,
    )
 
-### Result
-![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%204.png)
