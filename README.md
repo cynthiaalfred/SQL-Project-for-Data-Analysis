@@ -71,3 +71,19 @@ DELETE FROM CTE WHERE rn>1
 ```
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%203.png)
+
+
+### Creating Schema
+```SQL
+--DIMENSION TABLES
+--DATA TABLE
+CREATE TABLE dim_date(
+   date_id INT IDENTITY (1,1) PRIMARY KEY,
+   FULL_DATE DATE,
+   Year INT,
+   Month INT,
+   MONTH_NAME varchar(20),
+   Quarter INT,
+   Day INT,
+   Week INT,
+   )
