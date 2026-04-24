@@ -87,3 +87,6 @@ CREATE TABLE dim_date(
    Day INT,
    Week INT,
    )
+
+### Result
+![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%204.png)
