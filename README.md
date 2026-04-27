@@ -58,7 +58,7 @@ State, City, Order_Date, Restaurant_Name, Location, Category, Dish_Name, Price_I
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%202.png)
 
-### Delete Duplication
+### - Delete Duplication
 ```SQL
 WITH CTE AS (
 SELECT *, ROW_NUMBER() Over(
@@ -74,6 +74,8 @@ DELETE FROM CTE WHERE rn>1
 
 
 ### Creating Structure of Table
+
+### 1
 ```SQL
 --DIMENSION TABLES
 --DATA TABLE
@@ -91,3 +93,16 @@ CREATE TABLE dim_date(
 
 ### Result
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%204.png)
+
+### 2
+```SQL
+ --Create Location
+   CREATE TABLE dim_location(
+   location_id INT IDENTITY (1,1) PRIMARY KEY,
+   State varchar (100),
+   City varchar(100),
+   Location varchar(200)
+   )
+```
+
+![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%205.png)
