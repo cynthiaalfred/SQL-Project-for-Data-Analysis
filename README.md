@@ -79,10 +79,10 @@ DELETE FROM CTE WHERE rn>1
 --DATA TABLE
 CREATE TABLE dim_date(
    date_id INT IDENTITY (1,1) PRIMARY KEY,
-   FULL_DATE DATE,
+   Full_Month DATE,
    Year INT,
    Month INT,
-   MONTH_NAME varchar(20),
+   Month_Name varchar(20),
    Quarter INT,
    Day INT,
    Week INT,
