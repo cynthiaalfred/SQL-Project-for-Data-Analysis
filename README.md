@@ -75,7 +75,6 @@ DELETE FROM CTE WHERE rn>1
 
 ### Creating Structure of Table
 
-### 1
 ```SQL
 --DIMENSION TABLES
 --DATA TABLE
@@ -89,32 +88,61 @@ CREATE TABLE dim_date(
    Day INT,
    Week INT,
    )
-```
 
-### Result
-![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%204.png)
-
-### 2
-```SQL
- --Create Location
+ --dim_location
+   --Create Location
    CREATE TABLE dim_location(
    location_id INT IDENTITY (1,1) PRIMARY KEY,
    State varchar (100),
    City varchar(100),
    Location varchar(200)
    )
-```
 
-![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%205.png)
+   SELECT * FROM dim_location
 
-### 3
-```SQL
-  --Create Restaurant
+   --dim_restaurant
+   --Create Restaurant
    CREATE TABLE dim_restaurant(
    restaurant_id INT IDENTITY (1,1) PRIMARY KEY,
   restaurant_name varchar (200)
   )
+
+  --dim_catogery
+  --Create category
+  CREATE TABLE dim_category(
+  category_id INT IDENTITY (1,1) PRIMARY KEY,
+  Category varchar (200)
+  )
+
+  --Creare Dish
+  CREATE TABLE dim_dish(
+  dish_id INT IDENTITY (1,1) PRIMARY KEY,
+  dish_name varchar (200)
+  )
+  
+  SELECT * FROM swiggy_data
+
+  --FACT TABLE
+  CREATE TABLE fact_swiggy_orders(
+  order_id INT IDENTITY (1,1) PRIMARY KEY,
+
+  date_id INT,
+  Price_GBP DECIMAL(10,2),
+  Rating DECIMAL (4,2),
+  Rating_Count INT,
+
+  location_id INT,
+  restaurant_id INT,
+  category_id INT,
+  dish_id INT,
+
+  FOREIGN KEY (date_id) REFERENCES dim_date(date_id),
+  FOREIGN KEY (location_id) REFERENCES dim_location(location_id),
+  FOREIGN KEY (restaurant_id) REFERENCES dim_restaurant(restaurant_id),
+  FOREIGN KEY (category_id) REFERENCES dim_category(category_id),
+  FOREIGN KEY (dish_id) REFERENCES dim_dish(dish_id),
+  );
 ```
 
-### Result
-![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%205.png)
+
+
