@@ -73,7 +73,7 @@ DELETE FROM CTE WHERE rn>1
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%203.png)
 
 
-### Creating Schema
+### Creating Structure of Table
 ```SQL
 --DIMENSION TABLES
 --DATA TABLE
