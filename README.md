@@ -106,3 +106,15 @@ CREATE TABLE dim_date(
 ```
 
 ![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%205.png)
+
+### 3
+```SQL
+  --Create Restaurant
+   CREATE TABLE dim_restaurant(
+   restaurant_id INT IDENTITY (1,1) PRIMARY KEY,
+  restaurant_name varchar (200)
+  )
+```
+
+### Result
+![](https://github.com/cynthiaalfred/SQL-Project-for-Data-Analysis/blob/main/Result%205.png)
